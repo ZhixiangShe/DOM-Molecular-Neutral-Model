@@ -14,7 +14,7 @@ Sample_Name = "Dataset_Name" # Sample name for output
 
 setwd("/path/to/ICR_data") # Load in data #
 
-data<-read.csv('dom.csv',head=T, row.names=1, sep = "\t")
+data<-read.csv('dom.csv',head=T, row.names=1)
 
 #Calculate the relative abundance of each molecular formula in each sample with a threshold value of 100
 scale_to_100 <- function(x) {
